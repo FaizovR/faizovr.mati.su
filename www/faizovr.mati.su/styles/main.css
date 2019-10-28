@@ -4,7 +4,6 @@ body {
   padding: 0;
   height: 100%;
   width: 100%;
-  overflow: auto;
 }
 
 
@@ -15,12 +14,6 @@ li {
   color: #444444;
 }
 
-code {
-  font-family: "Inconsolata", monospace;
-  font-size: 16pt;
-  margin-top: 20px;
-  color: #444444;
-}
 
 #content {
     width: 60%;
@@ -28,10 +21,11 @@ code {
 }
 
 .banner {
-    background-size: "cover";
-    width: 100%;
+    background: linear-gradient(transparent, rgb(255, 255, 255)) 0% 0% / cover, url(../img/mac.jpeg) center center no-repeat;
+    background-size: cover;
     height: 50%;
-}
+  }
+
 
 .header {
   text-align: center;
