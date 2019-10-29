@@ -14,6 +14,9 @@ li {
   color: #444444;
 }
 
+a {
+  text-decoration: none;
+}
 
 #content {
     width: 60%;
@@ -51,4 +54,22 @@ li {
   justify-content: space-between;
   background-color: #ffffff;
   padding: 14px;
+}
+
+
+.navlink {
+  font-family: "Oswald", sans-serif;
+  font-size: 24px;
+}
+
+#explink{
+  color: rgba(237, 45, 141, 0.6);
+}
+
+#Projlink{
+  color: rgb(0, 162, 203, 0.6);
+}
+
+#contactlink{
+  color: rgba(247, 180, 0, 0.6);
 }
