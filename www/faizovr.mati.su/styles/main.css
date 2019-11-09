@@ -14,6 +14,16 @@ li {
   color: #444444;
 }
 
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+
 a {
   text-decoration: none;
 }
@@ -21,6 +31,10 @@ a {
 #content {
     width: 60%;
     margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: #666666;
+    border-style: solid;
 }
 
 .banner {
@@ -32,6 +46,7 @@ a {
 
 .header {
   text-align: center;
+  margin-bottom: 40px;
 }
 
 .title,
@@ -43,6 +58,11 @@ a {
 .title {
   font-size: 120px;
   color: #444444;
+}
+
+.subtitle {
+  font-size: 30px;
+  color: #888888;
 }
 
 #navbar {
@@ -72,4 +92,100 @@ a {
 
 #contactlink{
   color: rgba(247, 180, 0, 0.6);
+}
+
+.section{
+  min-height: 100vh;
+  position: inline;
+}
+
+.sectiontitle {
+  font-size: 60px;
+  margin-bottom: 10px
+}
+
+#experiencetitle{
+  color: rgb(237, 45, 141);
+}
+
+#projtitle{
+  color: rgb(0, 162, 203);
+}
+
+.fa-github {
+  color: rgb(0, 162, 203, 0.6);
+}
+
+#projectcontainer{
+  display: flex;
+}
+
+#projectbrowser{
+  width: 35%;
+  padding-right: 50px;
+}
+
+.projectlist {
+  list-style-type: none;
+}
+
+.project {
+  margin-bottom: 15px;
+}
+
+.project:hover {
+  cursor: pointer;
+  color: rgb(0, 162, 203);
+}
+
+.active {
+  background: rgb(0, 162, 203);
+  color: white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
+}
+
+.active:hover {
+  color: white;
+}
+
+#slidetails {
+  padding-left: 15px;
+  width: 65%;
+}
+
+#projecttitle {
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  color: rgb(0, 162, 203);
+}
+
+#projectsummary {
+  margin-top: 10px;
+  font-size: 20px;
+  font-family: "Lato", sans-serif;
+  color: #999999;
+}
+
+.projectimage {
+  min-width: 30%;
+  max-width: 80%;
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#projecttechs, #projectmore {
+  margin-top: 10px;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: #999999;
+}
+
+
+
+#Contacttitle{
+  color: rgba(247, 180, 0);
 }
