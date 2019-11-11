@@ -87,7 +87,7 @@ PROJECT_DETAILS = {
       let img = $("<img class='projectimage'/>");
       img.attr("id", key + "_image");
       img.attr("src", PROJECT_DETAILS[key].imgsrc);
-      $("#projectimages").append(img);
+      $("#projectimage").append(img);
       img.hide();
     }
   }

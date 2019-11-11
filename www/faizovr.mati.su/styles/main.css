@@ -28,6 +28,19 @@ a {
   text-decoration: none;
 }
 
+footer {
+  margin-top: 100px;
+  border-top: 2px solid #888888;
+  font-size: 15px;
+  font-family: "Lato", sans-serif;
+  color: #444444;
+}
+
+#foot {
+  margin-top: 10px;
+  margin-left: 15px;
+}
+
 #content {
     width: 60%;
     margin: auto;
@@ -65,10 +78,10 @@ a {
   color: #888888;
 }
 
-#navbar {
+#navbar {border-top: 2px solid #888888;
   display: flex;
   margin-top: 30px;
-  margin-bottom: 120px;
+  margin-bottom: 30px;
   border-top: 2px solid #888888;
   border-bottom: 2px solid #888888;
   justify-content: space-between;
@@ -132,6 +145,10 @@ a {
   color: rgb(0, 162, 203, 1);
 }
 
+#tedetails {
+  width: 65%;
+}
+
 #projectcontainer{
   display: flex;
 }
@@ -147,6 +164,9 @@ a {
 
 .project {
   margin-bottom: 15px;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  padding-left: 4px;
 }
 
 .project:hover {
@@ -164,11 +184,6 @@ a {
 
 .active:hover {
   color: white;
-}
-
-#slidetails {
-  padding-left: 15px;
-  width: 65%;
 }
 
 #projecttitle {
@@ -199,7 +214,6 @@ a {
   font-family: "Lato", sans-serif;
   color: #999999;
 }
-
 
 
 #Contacttitle{
