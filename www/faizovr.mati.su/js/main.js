@@ -90,7 +90,6 @@ PROJECT_DETAILS = {
       $("#projectimages").append(img);
       img.hide();
     }
-  
   }
   
   function showProjectDetails(project) {

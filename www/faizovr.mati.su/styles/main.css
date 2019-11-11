@@ -86,12 +86,24 @@ a {
   color: rgba(237, 45, 141, 0.6);
 }
 
-#Projlink{
+#explink:hover{
+  color: rgba(237, 45, 141, 1);
+}
+
+#projlink{
   color: rgb(0, 162, 203, 0.6);
+}
+
+#projlink:hover{
+  color: rgb(0, 162, 203, 1);
 }
 
 #contactlink{
   color: rgba(247, 180, 0, 0.6);
+}
+
+#contactlink:hover{
+  color: rgba(247, 180, 0, 1);
 }
 
 .section{
@@ -114,6 +126,10 @@ a {
 
 .fa-github {
   color: rgb(0, 162, 203, 0.6);
+}
+
+.fa-github:hover {
+  color: rgb(0, 162, 203, 1);
 }
 
 #projectcontainer{
