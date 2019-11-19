@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Faizov Rustam</title>
+		<meta name = "viewport" content = "width=device-width, initial-scale=1">
+		<link rel = "stylesheet" href = "styles/reset.css"/>
+		<link rel = "stylesheet" type = "text/css" media = "screen" href = "styles/main.css" />
+		<link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato|Oswald" rel="stylesheet">
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    	<script src="js/main.js"></script>
+		<link rel = "shortcut icon" href = "favicon.ico">
+		<link rel = "icon" href = "favicon.ico">
+	</head>
+
+	<body>
+		<div class = "banner"></div>
+		<div id = "content">
+
+			<!--#include file="Blocks/header.html"-->
+			
+			<div>
+				<!--#if expr="($DOCUMENT_URI != \"/index.shtml\")"-->
+				<div><!--#include file = "Project/index.html"--></div>
+				<!--#elif expr="($DOCUMENT_URI ~ \"/Experience/index.shtml\")"-->
+				bb
+				<!--#include file = "Experience/index.html"-->
+				cccc
+				<!--#else-->
+				ddddddd
+				<!--#include file = "Contact/index.html"-->
+				vvvvvvvv
+				<!--#endif-->
+			</div>
+
+			<!--#include file="Blocks/footer.shtml"-->
+		</div>
+	</body>
+</html>
+

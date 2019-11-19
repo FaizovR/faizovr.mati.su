@@ -6,6 +6,13 @@ body {
   width: 100%;
 }
 
+p {
+  display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
 
 p,
 li {
@@ -28,6 +35,10 @@ a {
   text-decoration: none;
 }
 
+span {
+  line-height: 2em;
+}
+
 footer {
   margin-top: 100px;
   border-top: 2px solid #888888;
@@ -41,15 +52,25 @@ footer {
   margin-left: 15px;
 }
 
-#content {
+@media screen and (max-width: 800px){
+  #content {
+    width: 100%;
+    margin: auto;
+    padding: 20px;
+    border-radius: 20px;
+    border-color: #666666;
+  }
+}
+
+@media screen and (min-width: 800px){
+  #content {
     width: 60%;
     margin: auto;
     padding: 20px;
     border-radius: 20px;
     border-color: #666666;
-    border-style: solid;
+  }
 }
-
 .banner {
     background: linear-gradient(transparent, rgb(255, 255, 255)) 0% 0% / cover, url(../img/mac.jpeg) center center no-repeat;
     background-size: cover;
@@ -99,9 +120,13 @@ footer {
   color: rgba(237, 45, 141, 0.6);
 }
 
-#explink:hover{
-  color: rgba(237, 45, 141, 1);
+#explink:hover,
+#experiencetitle,
+.expemph {
+  color: rgb(237, 45, 141);
 }
+
+
 
 #projlink{
   color: rgb(0, 162, 203, 0.6);
@@ -129,10 +154,6 @@ footer {
   margin-bottom: 10px
 }
 
-#experiencetitle{
-  color: rgb(237, 45, 141);
-}
-
 #projtitle{
   color: rgb(0, 162, 203);
 }
@@ -156,6 +177,10 @@ footer {
 #projectbrowser{
   width: 35%;
   padding-right: 50px;
+}
+
+#projectdetails{
+  width: 65%;
 }
 
 .projectlist {
@@ -218,4 +243,36 @@ footer {
 
 #Contacttitle{
   color: rgba(247, 180, 0);
+}
+
+#experiencetitle{
+  color: rgb(237, 45, 141);
+}
+
+.fa-file,
+.fa-linkedin {
+  color: rgb(237, 45, 141);
+}
+
+.expdates {
+  float: right;
+  font-style: italic;
+}
+
+.summary,
+.details {
+  margin: 0;
+  margin-top: 30px;
+  padding: 0;
+}
+
+
+.summarypara {
+  margin-bottom: 200;
+  color: #444444;
+}
+
+.details {
+  color: #999999;
+  display: none;
 }
