@@ -19,16 +19,9 @@
 	<body>
 		<div class = "banner"></div>
 		<div id = "content">
-
-			<div class = "header">
-				<div class = "title">Faizov Rustam</div>
-				<div class = "subtitle">Good words!</div>
-				<div id="navbar">
-					<a class = "navlink" id = "projlink" href="../">Projects</a>
-					<a class = "navlink" id = "explink" href = "../Experience">Experience</a>
-					<a class = "navlink" id = "contactlink">Contact me</a>
-				</div>
-			</div>
+			<!--#include virtual="../Blocks/header.shtml"-->
+			
+			<!--#include virtual="../Blocks/footer.shtml"-->
 		</div>
 	</body>
 

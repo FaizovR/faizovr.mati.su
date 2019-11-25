@@ -1,0 +1,11 @@
+<div class = "header">
+    <h1 class = "title">Faizov Rustam</h1>
+    <div class = "subtitle">Good words!</div>
+    <div id="navbar">
+            <a class = "navlink" id = "projlink" <!--#if expr="($DOCUMENT_URI != \/index.shtml )"--> href = "../"<!--#endif-->>Projects</a>
+            <a class = "navlink" id = "explink" <!--#if expr="($DOCUMENT_URI != \/Experience\/index.shtml )"--> href = "/Experience/"<!--#endif-->>Experience</a>
+            <a class = "navlink" id = "contactlink" <!--#if expr="($DOCUMENT_URI != \/Contact\/index.shtml )"--> href = "/Contact/"<!--#endif-->>Contact me</a>
+    
+    </div>
+</div>
+

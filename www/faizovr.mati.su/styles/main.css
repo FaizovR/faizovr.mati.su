@@ -52,7 +52,7 @@ footer {
   margin-left: 15px;
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 810px){
   #content {
     width: 100%;
     margin: auto;
@@ -62,7 +62,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 800px){
+@media screen and (min-width: 810px){
   #content {
     width: 60%;
     margin: auto;
@@ -83,13 +83,13 @@ footer {
   margin-bottom: 40px;
 }
 
-.title,
 .subtitle,
 .sectiontitle {
   font-family: "Oswald", sans-serif;
 }
 
-.title {
+h1{
+  font-family: "Oswald", sans-serif;
   font-size: 120px;
   color: #444444;
 }
