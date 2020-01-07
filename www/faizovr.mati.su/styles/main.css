@@ -22,7 +22,7 @@ li {
 }
 
 ul {
-  display: block;
+  display: table;
   list-style-type: disc;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -52,13 +52,279 @@ footer {
   margin-left: 15px;
 }
 
+@media print{
+
+  html,body {
+    background-color: #FFFFFF;
+    font-family: 'Times New Roman', Times, serif;
+    color: #000000;
+    font-size: 40pt;
+    margin: 0cm;
+    line-height: 1.5;
+  }
+
+  nav {
+    display: none;
+  }
+
+  h1 {
+    display: block;
+    text-align: center;
+    margin: auto;
+    font-size: 30pt;
+  }
+
+  p {
+    text-align: justify;
+    margin: auto;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 0.5cm;
+    color: rgb(0, 0, 0);
+    font-size: 22pt;
+  }
+  
+  h3 {
+    text-align: center;
+    margin-left: 0cm;
+    margin-top: 0.5cm;
+    margin-bottom: 0.3cm;
+    color: rgb(0, 0, 0);
+    font-size: 18pt;
+  }
+
+  .projectimage {
+    display: none;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  footer {
+    height: 1cm;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 14pt;
+    background-color: rgb(255, 255, 255); 
+    color: rgb(0, 0, 0); 
+    border-top: none; 
+  }
+}
+
+
 @media screen and (max-width: 810px){
   #content {
     width: 100%;
     margin: auto;
-    padding: 20px;
     border-radius: 20px;
     border-color: #666666;
+  }
+  .banner {
+    background: linear-gradient(transparent, rgb(255, 255, 255)) 0% 0% / cover, url(../img/mac.jpeg) center center no-repeat;
+    background-size: cover;
+    height: 50%;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .subtitle,
+  .sectiontitle {
+    font-family: "Oswald", sans-serif;
+  }
+
+  h1{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 120px;
+    color: #444444;
+  }
+
+  .subtitle {
+    font-size: 30px;
+    color: #888888;
+  }
+
+  #navbar {
+    border-top: 2px solid #888888;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 2px solid #888888;
+    border-bottom: 2px solid #888888;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 14px;
+    list-style-type: none;
+  }
+
+
+  .navlink {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+  }
+
+  #explink{
+    color: rgba(237, 45, 141, 0.6);
+  }
+
+  #explink:hover,
+  #experiencetitle,
+  .expemph {
+    color: rgb(237, 45, 141);
+  }
+
+
+
+  #projlink{
+    color: rgb(0, 162, 203, 0.6);
+  }
+
+  #projlink:hover{
+    color: rgb(0, 162, 203, 1);
+  }
+
+  #contactlink{
+    color: rgba(247, 180, 0, 0.6);
+  }
+
+  #contactlink:hover{
+    color: rgba(247, 180, 0, 1);
+  }
+
+  .section{
+    position: inline;
+  }
+
+  .sectiontitle {
+    font-size: 60px;
+    margin-bottom: 10px
+  }
+
+  #projtitle{
+    color: rgb(0, 162, 203);
+  }
+
+  .fa-github {
+    color: rgb(0, 162, 203, 0.6);
+  }
+
+  .fa-github:hover {
+    color: rgb(0, 162, 203, 1);
+  }
+
+  #tedetails {
+    width: 65%;
+  }
+
+  #projectcontainer{
+    display: flex;
+  }
+
+  #projectbrowser{
+    width: 35%;
+    padding-right: 50px;
+  }
+
+  #projectdetails{
+    width: 65%;
+  }
+
+  .projectlist {
+    list-style-type: none;
+  }
+
+  .project {
+    margin-bottom: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
+
+  .project:hover {
+    cursor: pointer;
+    color: rgb(0, 162, 203);
+  }
+
+  .active {
+    background: rgb(0, 162, 203);
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
+
+  .active:hover {
+    color: white;
+  }
+
+  #projecttitle {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    color: rgb(0, 162, 203);
+  }
+
+  #projectsummary {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    color: #999999;
+  }
+
+  .projectimage {
+    min-width: 30%;
+    max-width: 80%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #projecttechs, #projectmore {
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    color: #999999;
+  }
+
+
+  #Contacttitle{
+    color: rgba(247, 180, 0);
+  }
+
+  #experiencetitle{
+    color: rgb(237, 45, 141);
+  }
+
+  .fa-file,
+  .fa-linkedin {
+    color: rgb(237, 45, 141);
+  }
+
+  .expdates {
+    float: right;
+    font-style: italic;
+  }
+
+  .summary,
+  .details {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+
+  .summarypara {
+    margin-bottom: 200;
+    color: #444444;
+  }
+
+  .details {
+    color: #999999;
+    display: none;
   }
 }
 
@@ -70,209 +336,212 @@ footer {
     border-radius: 20px;
     border-color: #666666;
   }
-}
-.banner {
-    background: linear-gradient(transparent, rgb(255, 255, 255)) 0% 0% / cover, url(../img/mac.jpeg) center center no-repeat;
-    background-size: cover;
-    height: 50%;
+
+  .banner {
+      background: linear-gradient(transparent, rgb(255, 255, 255)) 0% 0% / cover, url(../img/mac.jpeg) center center no-repeat;
+      background-size: cover;
+      height: 50%;
+    }
+
+
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .subtitle,
+  .sectiontitle {
+    font-family: "Oswald", sans-serif;
+  }
+
+  h1{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 120px;
+    color: #444444;
+  }
+
+  .subtitle {
+    font-size: 30px;
+    color: #888888;
+  }
+
+  #navbar {
+    border-top: 2px solid #888888;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 2px solid #888888;
+    border-bottom: 2px solid #888888;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 14px;
+    list-style-type: none;
   }
 
 
-.header {
-  text-align: center;
-  margin-bottom: 40px;
-}
+  .navlink {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+  }
 
-.subtitle,
-.sectiontitle {
-  font-family: "Oswald", sans-serif;
-}
+  #explink{
+    color: rgba(237, 45, 141, 0.6);
+  }
 
-h1{
-  font-family: "Oswald", sans-serif;
-  font-size: 120px;
-  color: #444444;
-}
-
-.subtitle {
-  font-size: 30px;
-  color: #888888;
-}
-
-#navbar {border-top: 2px solid #888888;
-  display: flex;
-  margin-top: 30px;
-  margin-bottom: 30px;
-  border-top: 2px solid #888888;
-  border-bottom: 2px solid #888888;
-  justify-content: space-between;
-  background-color: #ffffff;
-  padding: 14px;
-}
-
-
-.navlink {
-  font-family: "Oswald", sans-serif;
-  font-size: 24px;
-}
-
-#explink{
-  color: rgba(237, 45, 141, 0.6);
-}
-
-#explink:hover,
-#experiencetitle,
-.expemph {
-  color: rgb(237, 45, 141);
-}
+  #explink:hover,
+  #experiencetitle,
+  .expemph {
+    color: rgb(237, 45, 141);
+  }
 
 
 
-#projlink{
-  color: rgb(0, 162, 203, 0.6);
-}
+  #projlink{
+    color: rgb(0, 162, 203, 0.6);
+  }
 
-#projlink:hover{
-  color: rgb(0, 162, 203, 1);
-}
+  #projlink:hover{
+    color: rgb(0, 162, 203, 1);
+  }
 
-#contactlink{
-  color: rgba(247, 180, 0, 0.6);
-}
+  #contactlink{
+    color: rgba(247, 180, 0, 0.6);
+  }
 
-#contactlink:hover{
-  color: rgba(247, 180, 0, 1);
-}
+  #contactlink:hover{
+    color: rgba(247, 180, 0, 1);
+  }
 
-.section{
-  min-height: 100vh;
-  position: inline;
-}
+  .section{
+    position: inline;
+  }
 
-.sectiontitle {
-  font-size: 60px;
-  margin-bottom: 10px
-}
+  .sectiontitle {
+    font-size: 60px;
+    margin-bottom: 10px
+  }
 
-#projtitle{
-  color: rgb(0, 162, 203);
-}
+  #projtitle{
+    color: rgb(0, 162, 203);
+  }
 
-.fa-github {
-  color: rgb(0, 162, 203, 0.6);
-}
+  .fa-github {
+    color: rgb(0, 162, 203, 0.6);
+  }
 
-.fa-github:hover {
-  color: rgb(0, 162, 203, 1);
-}
+  .fa-github:hover {
+    color: rgb(0, 162, 203, 1);
+  }
 
-#tedetails {
-  width: 65%;
-}
+  #tedetails {
+    width: 65%;
+  }
 
-#projectcontainer{
-  display: flex;
-}
+  #projectcontainer{
+    display: flex;
+  }
 
-#projectbrowser{
-  width: 35%;
-  padding-right: 50px;
-}
+  #projectbrowser{
+    width: 35%;
+    padding-right: 50px;
+  }
 
-#projectdetails{
-  width: 65%;
-}
+  #projectdetails{
+    width: 65%;
+  }
 
-.projectlist {
-  list-style-type: none;
-}
+  .projectlist {
+    list-style-type: none;
+  }
 
-.project {
-  margin-bottom: 15px;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 4px;
-}
+  .project {
+    margin-bottom: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
 
-.project:hover {
-  cursor: pointer;
-  color: rgb(0, 162, 203);
-}
+  .project:hover {
+    cursor: pointer;
+    color: rgb(0, 162, 203);
+  }
 
-.active {
-  background: rgb(0, 162, 203);
-  color: white;
-  padding-top: 4px;
-  padding-bottom: 4px;
-  padding-left: 4px;
-}
+  .active {
+    background: rgb(0, 162, 203);
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
 
-.active:hover {
-  color: white;
-}
+  .active:hover {
+    color: white;
+  }
 
-#projecttitle {
-  font-family: "Oswald", sans-serif;
-  font-size: 36px;
-  color: rgb(0, 162, 203);
-}
+  #projecttitle {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    color: rgb(0, 162, 203);
+  }
 
-#projectsummary {
-  margin-top: 10px;
-  font-size: 20px;
-  font-family: "Lato", sans-serif;
-  color: #999999;
-}
+  #projectsummary {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    color: #999999;
+  }
 
-.projectimage {
-  min-width: 30%;
-  max-width: 80%;
-  display: block;
-  margin-top: 20px;
-  margin-left: auto;
-  margin-right: auto;
-}
+  .projectimage {
+    min-width: 30%;
+    max-width: 80%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-#projecttechs, #projectmore {
-  margin-top: 10px;
-  font-size: 15px;
-  font-family: "Lato", sans-serif;
-  color: #999999;
-}
-
-
-#Contacttitle{
-  color: rgba(247, 180, 0);
-}
-
-#experiencetitle{
-  color: rgb(237, 45, 141);
-}
-
-.fa-file,
-.fa-linkedin {
-  color: rgb(237, 45, 141);
-}
-
-.expdates {
-  float: right;
-  font-style: italic;
-}
-
-.summary,
-.details {
-  margin: 0;
-  margin-top: 30px;
-  padding: 0;
-}
+  #projecttechs, #projectmore {
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    color: #999999;
+  }
 
 
-.summarypara {
-  margin-bottom: 200;
-  color: #444444;
-}
+  #Contacttitle{
+    color: rgba(247, 180, 0);
+  }
 
-.details {
-  color: #999999;
-  display: none;
+  #experiencetitle{
+    color: rgb(237, 45, 141);
+  }
+
+  .fa-file,
+  .fa-linkedin {
+    color: rgb(237, 45, 141);
+  }
+
+  .expdates {
+    float: right;
+    font-style: italic;
+  }
+
+  .summary,
+  .details {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+
+  .summarypara {
+    margin-bottom: 200;
+    color: #444444;
+  }
+
+  .details {
+    color: #999999;
+    display: none;
+  }
 }

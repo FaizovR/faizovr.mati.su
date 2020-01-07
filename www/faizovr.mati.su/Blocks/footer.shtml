@@ -1,7 +1,7 @@
 <footer>
     <div id = "foot">
         Created by Faizov Rustam <br>
-        <!--#config timefmt="%G"-->  Copyright &copy 
+        <!--#config timefmt="%G"-->  Copyright &copy;  
         <!--#if expr="$DATE_LOCAL = 2019"-->
         <!--#echo var="DATE_LOCAL"-->
         <!--#else-->
