@@ -52,72 +52,470 @@ footer {
   margin-left: 15px;
 }
 
-@media print{
-
+@media print {
   html,body {
     background-color: #FFFFFF;
     font-family: 'Times New Roman', Times, serif;
     color: #000000;
-    font-size: 40pt;
+    font-size: 14pt;
     margin: 0cm;
     line-height: 1.5;
+  }
+
+  .header {
+    text-align: justify;
+    margin-bottom: 0px;
   }
 
   nav {
     display: none;
   }
-
-  h1 {
-    display: block;
-    text-align: center;
-    margin: auto;
-    font-size: 30pt;
-  }
-
-  p {
-    text-align: justify;
-    margin: auto;
-  }
   
-  h2 {
-    text-align: center;
-    margin-bottom: 0.5cm;
-    color: rgb(0, 0, 0);
-    font-size: 22pt;
-  }
-  
-  h3 {
-    text-align: center;
-    margin-left: 0cm;
-    margin-top: 0.5cm;
-    margin-bottom: 0.3cm;
-    color: rgb(0, 0, 0);
-    font-size: 18pt;
-  }
-
-  .projectimage {
+  #projectbrowser{
     display: none;
+  }
+
+  h1{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 54pt;
+    color: #000000;
+  }
+
+  #projtitle{
+    text-align: justify;  
+  }
+
+  
+  #projectdetails{
+    width: 100%;
+  }
+
+  #projecttitle {
+    font-family: "Oswald", sans-serif;
+    font-size: 32pt;
+    color: #000000;
+  }
+
+  #projectsummary {
+    margin-top: 10px;
+    font-size: 14pt;
+    font-family: "Lato", sans-serif;
+    color: #000000;
+  }
+    
+  .projectimage {
+    min-width: 15%;
+    max-width: 40%;
+    display: block;
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .banner {
     display: none;
   }
+    
+  .subtitle,
+  .sectiontitle {
+    font-family: "Oswald", sans-serif;
+  }
 
-  footer {
-    height: 1cm;
-    font-family: 'Times New Roman', Times, serif;
+  .subtitle {
+    font-size: 26pt;
+    color: #000000;
+  }
+
+  .navlink {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+  }
+
+  .section{
+    position: inline;
+  }
+
+  .sectiontitle {
+    font-size: 60px;
+    margin-bottom: 10px
+  }
+
+  .fa-github {
+    color: #000000;
+  }
+
+  #projectcontainer{
+    display: flex;
+  }
+
+  .projectlist {
+    list-style-type: none;
+  }
+
+  .project {
+    margin-bottom: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
+
+  #projectmore {
+    display: none;
+  }
+
+  #projecttechs{
     font-size: 14pt;
-    background-color: rgb(255, 255, 255); 
-    color: rgb(0, 0, 0); 
-    border-top: none; 
+    font-family: "Lato", sans-serif;
+    color: #000000;
+  }
+
+  .fa-file,
+  .fa-linkedin {
+    color: #000000;
+  }
+
+  .expdates {
+    float: right;
+    font-style: italic;
+  }
+
+  .summary,
+  .details {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+  .summarypara {
+    margin-bottom: 200;
+    color: #000000;
+  }
+
+  .details {
+    color: #000000;
+    display: none;
+  }
+  table {
+    display: table;
+    border-collapse: separate;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    border-color: #000000;
+    font-variant: normal;
+  }
+
+  tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+
+  tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+
+  td {
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    padding-left: 40px;
+    color: #000000;
+    vertical-align: middle;
+  }
+
+  #contacttitle {
+    color: #000000;
+  }
+  
+  .fa-telegram,
+  .fa-envelope {
+    font-size: 100px;
+    color: #000000;
+  }
+
+  .halfsection {
+    min-height: 50vh;
+    position: inline;
   }
 }
-
 
 @media screen and (max-width: 810px){
   #content {
     width: 100%;
     margin: auto;
+    border-radius: 20px;
+    border-color: #666666;
+  }
+
+  .banner {
+    background: linear-gradient(transparent, rgb(255, 255, 255)) 0% 0% / cover, url(../img/mac.jpeg) center center no-repeat;
+    background-size: cover;
+    height: 50%;
+  }
+  .header {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .subtitle,
+  .sectiontitle {
+    font-family: "Oswald", sans-serif;
+  }
+
+  h1{
+    text-align: center;
+    font-family: "Oswald", sans-serif;
+    font-size: 120px;
+    color: #444444;
+  }
+
+  .subtitle {
+    font-size: 30px;
+    color: #888888;
+  }
+
+  #navbar {
+    border-top: 2px solid #888888;
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    border-top: 2px solid #888888;
+    border-bottom: 2px solid #888888;
+    justify-content: space-between;
+    background-color: #ffffff;
+    padding: 14px;
+    list-style-type: none;
+  }
+
+
+  .navlink {
+    font-family: "Oswald", sans-serif;
+    font-size: 24px;
+  }
+
+  #explink{
+    color: rgba(237, 45, 141, 0.6);
+  }
+
+  #explink:hover,
+  #experiencetitle,
+  .expemph {
+    color: rgb(237, 45, 141);
+  }
+
+
+
+  #projlink{
+    color: rgb(0, 162, 203, 0.6);
+  }
+
+  #projlink:hover{
+    color: rgb(0, 162, 203, 1);
+  }
+
+  #contactlink{
+    color: rgba(247, 180, 0, 0.6);
+  }
+
+  #contactlink:hover{
+    color: rgba(247, 180, 0, 1);
+  }
+
+  .section{
+    position: inline;
+  }
+
+  .sectiontitle {
+    font-size: 60px;
+    margin-bottom: 10px
+  }
+
+  #projtitle{
+    color: rgb(0, 162, 203);
+  }
+
+  .fa-github {
+    color: rgb(0, 162, 203, 0.6);
+  }
+
+  .fa-github:hover {
+    color: rgb(0, 162, 203, 1);
+  }
+
+  #projectcontainer{
+    display: flex;
+  }
+
+  #projectbrowser{
+    width: 35%;
+    padding-right: 50px;
+  }
+
+  #projectdetails{
+    width: 65%;
+  }
+
+  .projectlist {
+    list-style-type: none;
+  }
+
+  .project {
+    margin-bottom: 15px;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
+
+  .project:hover {
+    cursor: pointer;
+    color: rgb(0, 162, 203);
+  }
+
+  .active {
+    background: rgb(0, 162, 203);
+    color: white;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    padding-left: 4px;
+  }
+
+  .active:hover {
+    color: white;
+  }
+
+  #projecttitle {
+    font-family: "Oswald", sans-serif;
+    font-size: 36px;
+    color: rgb(0, 162, 203);
+  }
+
+  #projectsummary {
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Lato", sans-serif;
+    color: #999999;
+  }
+
+  .projectimage {
+    min-width: 30%;
+    max-width: 80%;
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #projecttechs, #projectmore {
+    margin-top: 10px;
+    font-size: 15px;
+    font-family: "Lato", sans-serif;
+    color: #999999;
+  }
+
+
+  #Contacttitle{
+    color: rgba(247, 180, 0);
+  }
+
+  #experiencetitle{
+    color: rgb(237, 45, 141);
+  }
+
+  .fa-file,
+  .fa-linkedin {
+    color: rgb(237, 45, 141);
+  }
+
+  .expdates {
+    float: right;
+    font-style: italic;
+  }
+
+  .summary,
+  .details {
+    margin: 0;
+    margin-top: 30px;
+    padding: 0;
+  }
+
+
+  .summarypara {
+    margin-bottom: 200;
+    color: #444444;
+  }
+
+  .details {
+    color: #999999;
+    display: none;
+  }
+
+  table {
+    display: table;
+    border-collapse: separate;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    border-color: grey;
+    font-variant: normal;
+  }
+
+  tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
+  }
+
+  tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
+  }
+
+  td {
+    font-size: 30px;
+    font-family: "Oswald", sans-serif;
+    padding-left: 40px;
+    color: #444444;
+    vertical-align: middle;
+  }
+
+  #contacttitle {
+    color: rgb(247, 180, 0);
+  }
+  
+  .fa-telegram,
+  .fa-envelope {
+    font-size: 100px;
+    color: rgb(247, 180, 0);
+  }
+
+  .halfsection {
+    min-height: 50vh;
+    position: inline;
+  }
+
+
+}
+
+
+@media screen and (min-width: 810px){
+  #content {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
     border-radius: 20px;
     border-color: #666666;
   }
@@ -216,10 +614,6 @@ footer {
     color: rgb(0, 162, 203, 1);
   }
 
-  #tedetails {
-    width: 65%;
-  }
-
   #projectcontainer{
     display: flex;
   }
@@ -326,222 +720,55 @@ footer {
     color: #999999;
     display: none;
   }
-}
 
-@media screen and (min-width: 810px){
-  #content {
-    width: 60%;
-    margin: auto;
-    padding: 20px;
-    border-radius: 20px;
-    border-color: #666666;
+  table {
+    display: table;
+    border-collapse: separate;
+    white-space: normal;
+    line-height: normal;
+    font-weight: normal;
+    font-size: medium;
+    font-style: normal;
+    color: -internal-quirk-inherit;
+    text-align: start;
+    border-spacing: 2px;
+    border-color: grey;
+    font-variant: normal;
   }
 
-  .banner {
-      background: linear-gradient(transparent, rgb(255, 255, 255)) 0% 0% / cover, url(../img/mac.jpeg) center center no-repeat;
-      background-size: cover;
-      height: 50%;
-    }
-
-
-  .header {
-    text-align: center;
-    margin-bottom: 40px;
+  tbody {
+    display: table-row-group;
+    vertical-align: middle;
+    border-color: inherit;
   }
 
-  .subtitle,
-  .sectiontitle {
-    font-family: "Oswald", sans-serif;
+  tr {
+    display: table-row;
+    vertical-align: inherit;
+    border-color: inherit;
   }
 
-  h1{
-    text-align: center;
-    font-family: "Oswald", sans-serif;
-    font-size: 120px;
-    color: #444444;
-  }
-
-  .subtitle {
+  td {
     font-size: 30px;
-    color: #888888;
-  }
-
-  #navbar {
-    border-top: 2px solid #888888;
-    display: flex;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    border-top: 2px solid #888888;
-    border-bottom: 2px solid #888888;
-    justify-content: space-between;
-    background-color: #ffffff;
-    padding: 14px;
-    list-style-type: none;
-  }
-
-
-  .navlink {
     font-family: "Oswald", sans-serif;
-    font-size: 24px;
+    padding-left: 40px;
+    color: #444444;
+    vertical-align: middle;
   }
 
-  #explink{
-    color: rgba(237, 45, 141, 0.6);
+  #contacttitle {
+    color: rgb(247, 180, 0);
+  }
+  
+  .fa-telegram,
+  .fa-envelope {
+    font-size: 100px;
+    color: rgb(247, 180, 0);
   }
 
-  #explink:hover,
-  #experiencetitle,
-  .expemph {
-    color: rgb(237, 45, 141);
-  }
-
-
-
-  #projlink{
-    color: rgb(0, 162, 203, 0.6);
-  }
-
-  #projlink:hover{
-    color: rgb(0, 162, 203, 1);
-  }
-
-  #contactlink{
-    color: rgba(247, 180, 0, 0.6);
-  }
-
-  #contactlink:hover{
-    color: rgba(247, 180, 0, 1);
-  }
-
-  .section{
+  .halfsection {
+    min-height: 50vh;
     position: inline;
   }
 
-  .sectiontitle {
-    font-size: 60px;
-    margin-bottom: 10px
-  }
-
-  #projtitle{
-    color: rgb(0, 162, 203);
-  }
-
-  .fa-github {
-    color: rgb(0, 162, 203, 0.6);
-  }
-
-  .fa-github:hover {
-    color: rgb(0, 162, 203, 1);
-  }
-
-  #tedetails {
-    width: 65%;
-  }
-
-  #projectcontainer{
-    display: flex;
-  }
-
-  #projectbrowser{
-    width: 35%;
-    padding-right: 50px;
-  }
-
-  #projectdetails{
-    width: 65%;
-  }
-
-  .projectlist {
-    list-style-type: none;
-  }
-
-  .project {
-    margin-bottom: 15px;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-  }
-
-  .project:hover {
-    cursor: pointer;
-    color: rgb(0, 162, 203);
-  }
-
-  .active {
-    background: rgb(0, 162, 203);
-    color: white;
-    padding-top: 4px;
-    padding-bottom: 4px;
-    padding-left: 4px;
-  }
-
-  .active:hover {
-    color: white;
-  }
-
-  #projecttitle {
-    font-family: "Oswald", sans-serif;
-    font-size: 36px;
-    color: rgb(0, 162, 203);
-  }
-
-  #projectsummary {
-    margin-top: 10px;
-    font-size: 20px;
-    font-family: "Lato", sans-serif;
-    color: #999999;
-  }
-
-  .projectimage {
-    min-width: 30%;
-    max-width: 80%;
-    display: block;
-    margin-top: 20px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  #projecttechs, #projectmore {
-    margin-top: 10px;
-    font-size: 15px;
-    font-family: "Lato", sans-serif;
-    color: #999999;
-  }
-
-
-  #Contacttitle{
-    color: rgba(247, 180, 0);
-  }
-
-  #experiencetitle{
-    color: rgb(237, 45, 141);
-  }
-
-  .fa-file,
-  .fa-linkedin {
-    color: rgb(237, 45, 141);
-  }
-
-  .expdates {
-    float: right;
-    font-style: italic;
-  }
-
-  .summary,
-  .details {
-    margin: 0;
-    margin-top: 30px;
-    padding: 0;
-  }
-
-
-  .summarypara {
-    margin-bottom: 200;
-    color: #444444;
-  }
-
-  .details {
-    color: #999999;
-    display: none;
-  }
 }

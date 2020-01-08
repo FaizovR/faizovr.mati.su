@@ -3,7 +3,7 @@ PROJECT_DETAILS = {
     Website: {
       title: "Website: My personal website",
       summary: `Project Description...`,
-      imgsrc: "favicon.ico",
+      imgsrc: "web.jpeg",
       more: `View the code 
              <a href="https://github.com/FaizovR/faizovr.mati.su" target="_blank">here</a>`,
       technologies:

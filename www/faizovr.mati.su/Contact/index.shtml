@@ -8,7 +8,7 @@
 		<title>Faizov Rustam</title>
 		<meta name = "viewport" content = "width=device-width, initial-scale=1">
 		<link rel = "stylesheet" href = "../styles/reset.css"/>
-		<link rel = "stylesheet" type = "text/css" media = "screen" href = "../styles/main.css" />
+		<link rel = "stylesheet" href = "../styles/main.css" />
 		<link href="https://fonts.googleapis.com/css?family=Inconsolata|Lato|Oswald" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
@@ -20,7 +20,22 @@
 		<div class = "banner"></div>
 		<div id = "content">
 			<!--#include virtual="../Blocks/header.shtml"-->
-			
+			<div id="contact" class="halfsection">
+				<div class="sectiontitle" id="contacttitle"> Contact Me. </div>
+				<br>
+				<table>
+					<tr>
+						<td><i class="far fa-envelope"></i></td>
+						<td>faizov.rustam.r@gmail.com</td>
+					</tr>
+					<tr>
+						<td><i class="fab fa-telegram"></i></td>
+						<td>
+							@faizovr
+						</td>
+					</tr>
+				</table>
+			</div>
 			<!--#include virtual="../Blocks/footer.shtml"-->
 		</div>
 	</body>
